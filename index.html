@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>GIGARep - Install</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; background: #0a0a1a; color: #fff; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; }
+        .card { background: #1a1a2e; border-radius: 20px; padding: 40px 30px; text-align: center; max-width: 380px; width: 100%; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+        .icon { width: 80px; height: 80px; background: linear-gradient(135deg, #00d2ff, #0066ff); border-radius: 18px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 36px; }
+        h1 { font-size: 24px; margin-bottom: 8px; }
+        .version { color: #888; font-size: 14px; margin-bottom: 24px; }
+        .install-btn { display: block; background: linear-gradient(135deg, #00d2ff, #0066ff); color: #fff; text-decoration: none; padding: 16px 32px; border-radius: 14px; font-size: 18px; font-weight: 600; margin-bottom: 16px; transition: transform 0.2s; }
+        .install-btn:active { transform: scale(0.96); }
+        .note { color: #666; font-size: 12px; line-height: 1.5; }
+        .steps { text-align: left; color: #aaa; font-size: 13px; margin-top: 20px; line-height: 2; }
+        .steps li { margin-left: 10px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">📞</div>
+        <h1>GIGARep</h1>
+        <p class="version" id="version">Version 1.0 (Build 2)</p>
+        <a class="install-btn" id="installLink" href="#">Install App</a>
+        <p class="note">After tapping Install, check your home screen.<br>You may need to trust the profile in Settings.</p>
+        <ol class="steps">
+            <li>Tap <strong>Install</strong> above</li>
+            <li>Tap <strong>Install</strong> on the popup</li>
+            <li>Go to <strong>Settings → General → VPN & Device Management</strong></li>
+            <li>Tap <strong>Charles Witt</strong> → <strong>Trust</strong></li>
+        </ol>
+    </div>
+    <script>
+        // The manifest URL will be on GitHub Pages (HTTPS)
+        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist';
+        document.getElementById('installLink').href = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(manifestUrl);
+    </script>
+</body>
+</html>
