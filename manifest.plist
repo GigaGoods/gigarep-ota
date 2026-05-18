@@ -15,7 +15,7 @@
             <key>metadata</key>
             <dict>
                 <key>bundle-identifier</key><string>com.gigarep.callrecorder</string>
-                <key>bundle-version</key><string>1.50</string>
+                <key>bundle-version</key><string>148</string>
                 <key>kind</key><string>software</string>
                 <key>title</key><string>GIGARep</string>
             </dict>
