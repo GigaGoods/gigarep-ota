@@ -22,7 +22,7 @@
     <div class="card">
         <div class="icon">📞</div>
         <h1>GIGARep</h1>
-        <p class="version" id="version">Version 2.1 (Build 252 — carrier audio processing + Codex review fixes (monitor path, RT-safe meters, route defer, activation latch))</p>
+        <p class="version" id="version">Version 2.1 (Build 253 — pre-App-Store integrity audit: 10 calling-engine fixes (PushKit contract, logout unregister, hold latch TTL, merge rollback))</p>
         <a class="install-btn" id="installLink" href="#">Install App</a>
         <p class="note">After tapping Install, check your home screen.<br>You may need to trust the profile in Settings.</p>
         <ol class="steps">
@@ -34,7 +34,7 @@
     </div>
     <script>
         // The manifest URL will be on GitHub Pages (HTTPS)
-        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=252';
+        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=253';
         document.getElementById('installLink').href = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(manifestUrl);
     </script>
 </body>
