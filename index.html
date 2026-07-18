@@ -22,7 +22,7 @@
     <div class="card">
         <div class="icon">📞</div>
         <h1>GIGARep</h1>
-        <p class="version" id="version">Version 2.1 (Build 244 — unverified SIM raises setup popup (never the picker))</p>
+        <p class="version" id="version">Version 2.1 (Build 245 — removal kills dialing instantly (stale picker-state fix))</p>
         <a class="install-btn" id="installLink" href="#">Install App</a>
         <p class="note">After tapping Install, check your home screen.<br>You may need to trust the profile in Settings.</p>
         <ol class="steps">
@@ -34,7 +34,7 @@
     </div>
     <script>
         // The manifest URL will be on GitHub Pages (HTTPS)
-        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=244';
+        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=245';
         document.getElementById('installLink').href = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(manifestUrl);
     </script>
 </body>
