@@ -22,7 +22,7 @@
     <div class="card">
         <div class="icon">📞</div>
         <h1>GIGARep</h1>
-        <p class="version" id="version">Version 2.5 (Build 259 — HD Voice re-tuned: compressor above speech level (real +8-10dB at conversation), hotter synthesis)</p>
+        <p class="version" id="version">Version 2.5 (Build 260 — Wide speakerphone: pseudo-stereo decorrelation (kills the dual-driver comb) + b259 tuning)</p>
         <a class="install-btn" id="installLink" href="#">Install App</a>
         <p class="note">After tapping Install, check your home screen.<br>You may need to trust the profile in Settings.</p>
         <ol class="steps">
@@ -34,7 +34,7 @@
     </div>
     <script>
         // The manifest URL will be on GitHub Pages (HTTPS)
-        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=259';
+        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=260';
         document.getElementById('installLink').href = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(manifestUrl);
     </script>
 </body>
