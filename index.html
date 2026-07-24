@@ -22,7 +22,7 @@
     <div class="card">
         <div class="icon">📞</div>
         <h1>GIGARep</h1>
-        <p class="version" id="version">Version 2.65 (Build 268 — audio-engine lifecycle fix (wedge root cause) + Soak Gate (multi-call audio test, Settings ▸ dev)</p>
+        <p class="version" id="version">Version 2.65 (Build 269 — Soak Gate: streamed results (flush every 5 calls) + aborted runs report</p>
         <a class="install-btn" id="installLink" href="#">Install App</a>
         <p class="note">After tapping Install, check your home screen.<br>You may need to trust the profile in Settings.</p>
         <ol class="steps">
@@ -34,7 +34,7 @@
     </div>
     <script>
         // The manifest URL will be on GitHub Pages (HTTPS)
-        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=268';
+        const manifestUrl = 'https://gigagoods.github.io/gigarep-ota/manifest.plist?v=269';
         document.getElementById('installLink').href = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(manifestUrl);
     </script>
 </body>
