@@ -19,7 +19,7 @@
 				<key>bundle-identifier</key>
 				<string>com.gigarep.callrecorder</string>
 				<key>bundle-version</key>
-				<string>300</string>
+				<string>301</string>
 				<key>kind</key>
 				<string>software</string>
 				<key>title</key>
